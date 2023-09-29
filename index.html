@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative units - em</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        /*
+            em units - problem of shrinking/growing fonts
+         */
+        #section1 ul {
+            font-size: 0.8em;
+        }
+        /*
+            One of the solutions below
+        */
+        #section2 ul {
+            font-size: 0.8em;
+        }
+        #section2 li ul { /* alternatively ul ul */
+            font-size: 1em;
+        }
+        /*
+            Alternative and simpler solutions:
+                1. #section2>ul {font-size: 0.8em;}
+                2. #section2 ul {font-size: 0.8rem;}
+        */
+    </style>
+</head>
+<body>
+    <section id="section1">
+        World
+        <ul>
+            <li>
+                Africa
+                <ul>
+                    <li>Egipt</li>
+                    <li>Moroco</li>
+                    <li>Libia</li>
+                </ul>
+            </li>
+            <li>
+                America
+                <ul>
+                    <li>
+                        USA
+                        <ul>
+                            <li>New York</li>
+                            <li>Los Angeles</li>
+                            <li>Chicago</li>
+                        </ul>
+                    </li>
+                    <li>Canada</li>
+                    <li>Mexico</li>
+                </ul>
+            </li>
+            <li>
+                Europe
+                <ul>
+                    <li>
+                        UK
+                        <ul>
+                            <li>London</li>
+                            <li>Manchester</li>
+                            <li>Leeds</li>
+                        </ul>
+                    </li>
+                    <li>France</li>
+                    <li>Italy</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section id="section2">
+    World
+        <ul>
+            <li>
+                Africa
+                <ul>
+                    <li>Egipt</li>
+                    <li>Moroco</li>
+                    <li>Libia</li>
+                </ul>
+            </li>
+            <li>
+                America
+                <ul>
+                    <li>
+                        USA
+                        <ul>
+                            <li>New York</li>
+                            <li>Los Angeles</li>
+                            <li>Chicago</li>
+                        </ul>
+                    </li>
+                    <li>Canada</li>
+                    <li>Mexico</li>
+                </ul>
+            </li>
+            <li>
+                Europe
+                <ul>
+                    <li>
+                        UK
+                        <ul>
+                            <li>London</li>
+                            <li>Manchester</li>
+                            <li>Leeds</li>
+                        </ul>
+                    </li>
+                    <li>France</li>
+                    <li>Italy</li>
+                </ul>
+           </li>
+        </ul>    
+    </section>
+</body>
+</html>
